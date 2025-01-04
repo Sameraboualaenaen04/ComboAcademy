@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursesstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/download.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Combo</title>
+<head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>BIG OFFER</strong> You should check in on some of those fields below for free😊.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>  
+      <div class="nav-container">
+        <div class="nav-section-1">
+          <div class="logo">
+              <div class="fs-2 mb-3">
+                <a href="../index.html"><img src="./images/download.png" alt="" style="margin-top: -12px; width: 50px; display: flex; align-content: center; align-items: center;"></a>
+                </div>
+          </div>
+        </div>
+          <div class="nav-section-2">
+              <div class="links">
+                  <li>
+                     <a href="#" class="btn border" id="navA1">Home</a>
+                     <a href="#explore-courses" class="btn border" id="navA2">Courses</a>
+                     <a href="#Teacher" class="btn border" id="navA4">Tutor</a>
+                     <a href="#About-section" class="btn border" id="navA3">About</a>
+                  </li>
+              </div>
+          </div>
+            <div class="nav-section-3">
+              <div class="sign-button">
+                  <button  style="background-color: #273239;" class="btn text-light" id="signBtn" data-bs-toggle="modal" data-bs-target="#signInModal">Sign-in</button>
+              </div>
+              <div class="dark-mode-toggle">
+                  <input type="checkbox" class="input" id="dark-mode">
+                  <label for="dark-mode" class="label">
+                      <div class="circle"></div>
+                  </label>
+              </div>
+          </div>
+      </div>
+   </nav>
+
+   <div class="nav-checkBoxes">
+    <div class="aLinks">
+        <div class="dropdown">
+        <button class="btn text-dark" id="drop-button">DSA</button>
+        <div class="DSA-content" id="dsa-contnet">
+        <a href="./linkedlist.html">Linked List</a>
+        <a href="./stack.html">Stack</a>
+        <a href="./hash.html">Hash table</a>
+        <a href="#">Heaps</a>
+        </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn text-dark" id="drop-button">C#</button>
+          <div class="DSA-content">
+              <a href="./cintroduction.html">Introduction</a>
+              <a href="./csyntax.html">Syntax</a>
+              <a href="./cexamples.html">Examples</a>
+          </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn text-dark" id="drop-button">PYTHON</button>
+        <div class="DSA-content">
+            <a href="./python.html">Introduction</a>
+            <a href="./pythonsyntax.html">Syntax</a>
+            <a href="./pythonexamples.html">Examples</a>
+        </div>
+    </div>
+    </div>
+   </div>  
+
+   <div class="container mt-3 p-2">
+    <h1>What is a Heap?</h1>
+    <p>A heap is a specialized binary tree-based data structure that satisfies the heap property. The heap property states that for a max-heap, the value of each node is greater than or equal to the values of its children, and for a min-heap, the value of each node is less than or equal to the values of its children. This property ensures that the root node of a max-heap is the largest element, while the root node of a min-heap is the smallest element.</p>
+
+    <div class="d-flex justify-content-center">
+        <img src="../images/images/heapinto.png" alt="Heap Structure" style="margin-top: 20px; margin-bottom: 10px; width: 320px;">
+    </div>
+
+    <h2>Types of Heaps</h2>
+    <p>There are two main types of heaps:</p>
+    <ul>
+        <li><strong>Max-Heap:</strong> In a max-heap, the value of each node is greater than or equal to the values of its children. This ensures that the largest element is always at the root of the heap.</li>
+        <li><strong>Min-Heap:</strong> In a min-heap, the value of each node is less than or equal to the values of its children. This ensures that the smallest element is always at the root of the heap.</li>
+    </ul>
+
+    <div class="d-flex justify-content-center">
+        <img src="../images/images/max-min heap.png" alt="Max-Heap and Min-Heap" style="margin-top: 20px; margin-bottom: 10px; width: 320px;">
+    </div>
+
+    <h2>Heap Operations</h2>
+    <p>Heaps support several key operations, including:</p>
+    <ul>
+        <li><strong>Insertion:</strong> Adding a new element to the heap while maintaining the heap property.</li>
+        <li><strong>Deletion:</strong> Removing the root element (the largest or smallest element) from the heap and re-heapifying to maintain the heap property.</li>
+        <li><strong>Peek:</strong> Retrieving the root element without removing it from the heap.</li>
+        <li><strong>Heapify:</strong> Converting an arbitrary array into a heap by rearranging its elements.</li>
+    </ul>
+
+    <div class="d-flex justify-content-center">
+        <img src="../images/images/heap.png" alt="Heap Operations" style="margin-top: 20px; margin-bottom: 10px; width: 320px;">
+    </div>
+
+    <h2>Applications of Heaps</h2>
+    <p>Heaps are used in various applications due to their efficient operations. Some common applications include:</p>
+    <ul>
+        <li><strong>Priority Queues:</strong> Heaps are often used to implement priority queues, where elements are processed based on their priority. Max-heaps are used for descending priority, while min-heaps are used for ascending priority.</li>
+        <li><strong>Graph Algorithms:</strong> Heaps are used in graph algorithms like Dijkstra's shortest path algorithm and Prim's minimum spanning tree algorithm to efficiently manage and retrieve the next vertex to process.</li>
+        <li><strong>Heap Sort:</strong> Heaps are used in the heap sort algorithm, which is an efficient comparison-based sorting algorithm with a time complexity of O(n log n).</li>
+        <li><strong>Memory Management:</strong> Heaps are used in memory management systems to allocate and deallocate memory dynamically.</li>
+    </ul>
+
+    <div class="d-flex justify-content-center">
+        <img src="../images/images/operations on heaps.png" alt="Heap Applications" style="margin-top: 20px; margin-bottom: 10px; width: 320px;">
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>Heaps are a fundamental data structure with a wide range of applications in computer science. Their efficient operations and ability to maintain the heap property make them invaluable in various algorithms and systems. Understanding heaps and their applications is essential for any computer science enthusiast or professional.</p>
+</div>
+    <div class="modal" tabindex="-1" id="signInModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="faild-alert" role="alert">
+              <strong>Check the information🤔</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> 
+            <div class="alert alert-success alert-dismissible fade show" id="success-alert" style="display: none;" role="alert">
+              <strong>Succeed sign-in😁</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" aria-required="true"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title">Sign In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="age">Age: </label>
+              <input type="number" id="age" placeholder="19">
+              <label for="email">email: </label>
+              <input type="email" id="email" placeholder="..@gmail.com">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="getInfo()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Buttons  -->
+    <div class="arrow">
+     <a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+       </svg>
+     </a>
+     </div>
+     
+    <!--Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footer">
+        <section class="p-2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Combo academy</h6>
+                        <p>Established December 18, 2024 for scientific purposes.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                        <p><a href="./courses/linkedlist.html" class="text-reset">Liked List</a></p>
+                        <p><a href="./courses/stack.html" class="text-reset">Stacks</a></p>
+                        <p><a href="./courses/heaps.html" class="text-reset">Heapss</a></p>
+                        <p><a href="./courses/hash.html" class="text-reset">hash Tables</a></p>
+                        <p><a href="./courses/python.html" class="text-reset">Python</a></p>
+                        <p><a href="./courses/cintroduction.html" class="text-reset">C#</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Help Team</h6>
+                        <p><a href="./help.html" class="text-reset">Help</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i>Damascus, Almazzeh, SY</p>
+                        <p><i class="fas fa-envelope me-3"></i> sameraboualaenaen@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i>+963 946 452 948</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <div class="text-center p-4 copyright" style="background-color: rgba(232,255,248,255);">
+        © 2024 Copyright
+      </div>
+        </footer>
+
+    <script src="../main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

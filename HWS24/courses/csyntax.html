@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursesstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/download.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Combo</title>
+<head>
+
+<body>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>BIG OFFER</strong> You should check in on some of those fields below for free😊.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>  
+      <div class="nav-container">
+        <div class="nav-section-1">
+          <div class="logo">
+              <div class="fs-2 mb-3">
+                <a href="../index.html"><img src="./images/download.png" alt="" style="margin-top: -12px; width: 50px; display: flex; align-content: center; align-items: center;"></a>
+                </div>
+          </div>
+        </div>
+          <div class="nav-section-2">
+              <div class="links">
+                  <li>
+                     <a href="#" class="btn border" id="navA1">Home</a>
+                     <a href="#explore-courses" class="btn border" id="navA2">Courses</a>
+                     <a href="#Teacher" class="btn border" id="navA4">Tutor</a>
+                     <a href="#About-section" class="btn border" id="navA3">About</a>
+                  </li>
+              </div>
+          </div>
+            <div class="nav-section-3">
+              <div class="sign-button">
+                  <button  style="background-color: #273239;" class="btn text-light" id="signBtn" data-bs-toggle="modal" data-bs-target="#signInModal">Sign-in</button>
+              </div>
+              <div class="dark-mode-toggle">
+                  <input type="checkbox" class="input" id="dark-mode">
+                  <label for="dark-mode" class="label">
+                      <div class="circle"></div>
+                  </label>
+              </div>
+          </div>
+      </div>
+   </nav>
+
+   <div class="nav-checkBoxes">
+    <div class="aLinks">
+        <div class="dropdown">
+        <button class="btn text-dark" id="drop-button">DSA</button>
+        <div class="DSA-content" id="dsa-contnet">
+        <a href="./linkedlist.html">Linked List</a>
+        <a href="./stack.html">Stack</a>
+        <a href="./hash.html">Hash table</a>
+        <a href="./heaps.html">Heaps</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn text-dark" id="drop-button">C#</button>
+            <div class="DSA-content">
+                <a href="./cintroduction.html">Introduction</a>
+                <a href="#">Syntax</a>
+                <a href="./cexamples.html">Examples</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn text-dark" id="drop-button">PYTHON</button>
+          <div class="DSA-content">
+              <a href="./python.html">Introduction</a>
+              <a href="./pythonsyntax.html">Syntax</a>
+              <a href="./pythonexamples.html">Examples</a>
+          </div>
+      </div>
+    </div>
+   </div>  
+  
+
+   <div class="container mt-3 p-2">
+    <h1>C# Syntax</h1>
+    <h2>Basic Syntax</h2>
+    <p>C# syntax is designed to be readable and easy to understand. Here are some key aspects of C# syntax:</p>
+    
+    <div class="d-flex justify-content-center">
+      <img src="../images/images/96ccc91fd3823829006d95901002a321.jpg" alt="#" style="margin-top: -20px; margin-bottom: -50px; width: 300px;">
+    </div>
+
+    <h3>Main Method</h3>
+    <p>Every C# application must have a <code>Main</code> method, which serves as the entry point of the program.</p>
+
+    <h3>Namespaces</h3>
+    <p>C# uses namespaces to organize code and avoid name conflicts. A namespace is a way to group related classes, interfaces, and other types.</p>
+
+    <h3>Classes and Objects</h3>
+    <p>C# is an object-oriented language, so everything revolves around classes and objects. A class defines the structure and behavior of objects.</p>
+
+    <h3>Data Types</h3>
+    <p>C# has a rich set of built-in data types, including:</p>
+    <ul>
+        <li><strong>Numeric Types:</strong> <code>int</code>, <code>float</code>, <code>double</code></li>
+        <li><strong>Characters:</strong> <code>char</code></li>
+        <li><strong>Boolean:</strong> <code>bool</code></li>
+        <li><strong>Strings:</strong> <code>string</code></li>
+    </ul>
+
+    <h3>Variables</h3>
+    <p>Variables are used to store data. They must be declared with a specific data type.</p>
+
+    <h3>Operators</h3>
+    <p>C# supports a wide range of operators, including:</p>
+    <ul>
+        <li><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+        <li><strong>Relational Operators:</strong> <code>==</code>, <code>!=</code>, <code>></code>, <code><</code></li>
+        <li><strong>Logical Operators:</strong> <code>&&</code>, <code>||</code>, <code>!</code></li>
+        <li><strong>Assignment Operators:</strong> <code>=</code>, <code>+=</code>, <code>-=</code></li>
+    </ul>
+
+    <h3>Control Structures</h3>
+    <p>C# provides various control structures for decision-making and looping, such as:</p>
+    <ul>
+        <li><code>if</code>, <code>else</code></li>
+        <li><code>switch</code></li>
+        <li><code>for</code>, <code>while</code>, <code>do-while</code></li>
+    </ul>
+
+    <h3>Methods</h3>
+    <p>Methods are functions that belong to a class. They define the behavior of objects and can be called to perform specific tasks.</p>
+
+    <h3>Properties</h3>
+    <p>Properties are special methods that provide a flexible mechanism to read, write, or compute the values of private fields.</p>
+
+    <h3>Access Modifiers</h3>
+    <p>C# supports access modifiers to control the visibility of classes and members, including:</p>
+    <ul>
+        <li><code>public</code></li>
+        <li><code>private</code></li>
+        <li><code>protected</code></li>
+        <li><code>internal</code></li>
+    </ul>
+
+    <h3>Inheritance</h3>
+    <p>C# supports inheritance, allowing classes to inherit properties and methods from other classes.</p>
+
+    <h3>Interfaces</h3>
+    <p>Interfaces define a contract that classes can implement, ensuring they provide specific functionalities.</p>
+
+    <h3>Exception Handling</h3>
+    <p>C# provides a robust exception handling mechanism using:</p>
+    <ul>
+        <li><code>try</code></li>
+        <li><code>catch</code></li>
+        <li><code>finally</code></li>
+        <li><code>throw</code></li>
+    </ul>
+  </div>
+
+  <h1 class="mx-auto d-flex justify-content-center mb-5">Examples</h1>
+  <h2 class="mx-auto d-flex justify-content-center mb-5">Example 1:</h2>
+
+  <div class="card">
+      <div class="tools p-2" style="background: #011522;">
+      <div class="card__content text-light" style="background: #011522;">
+          <span style="color: red;">public</span> class <span style="color: green;">MyClass</span>
+           <span style="color: yellow;">{</span>
+           <p>//Class members here</p>
+           <span style="color: yellow;">}</span>
+      </div>
+      </div>
+  </div>
+  
+  <h2 class="mx-auto d-flex justify-content-center m-5">Example 2:</h2>
+  
+  <div class="card">
+      <div class="tools p-2" style="background: #011522;">
+      <div class="card__content text-light" style="background: #011522;">
+          <span style="color: red;">int</span> number <span style="color: green;">=</span> <span>10;</span>
+      </div>
+      </div>
+  </div>
+
+  <h2 class="mx-auto d-flex justify-content-center m-5">Example 3:</h2>
+
+  <div class="card">
+      <div class="tools p-2" style="background: #011522;">
+      <div class="card__content text-light" style="background: #011522;">
+          <span style="color: red;">if</span> (condition)
+           <span style="color: yellow;">{</span>
+            <p>//Code to execute if true</p>
+            <span style="color: red;">if else</span> (condition)
+           <span style="color: yellow;">{</span>
+            <p>//Code to execute if true</p>
+           <span style="color: yellow;">}</span>
+            <span style="color: red;">else</span>
+            <span style="color: yellow;">{</span>
+            <p>//if 2 conditions not true</p>
+           <span style="color: yellow;">}</span>
+           <span style="color: yellow;">}</span>
+      </div>
+      </div>
+  </div>
+
+  <h2 class="mx-auto d-flex justify-content-center m-5">Example 4:</h2>
+
+  <div class="card mb-3">
+      <div class="tools p-2" style="background: #011522;">
+      <div class="card__content text-light" style="background: #011522;">
+          <span style="color: red;">public</span> void <span style="color: green;">Mymethod</span>
+           <span style="color: yellow;">{</span>
+           <p>//Method body go here</p>
+           <span style="color: yellow;">}</span>
+      </div>
+      </div>
+  </div>
+
+    <div class="modal" tabindex="-1" id="signInModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="faild-alert" role="alert">
+              <strong>Check the information🤔</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> 
+            <div class="alert alert-success alert-dismissible fade show" id="success-alert" style="display: none;" role="alert">
+              <strong>Succeed sign-in😁</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" aria-required="true"></button>
+            </div>
+            <div class="modal-header">
+              <h5 class="modal-title">Sign In</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center flex-column">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="age">Age: </label>
+              <input type="number" id="age" placeholder="19">
+              <label for="email">email: </label>
+              <input type="email" id="email" placeholder="..@gmail.com">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="getInfo()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Buttons  -->
+    <div class="arrow">
+     <a href="#" id="scrollButton" class="btn btn-info btn-floating btn-lg" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: block;">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+       </svg>
+     </a>
+     </div>
+     
+    <!--Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footer">
+        <section class="p-2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Combo academy</h6>
+                        <p>Established December 18, 2024 for scientific purposes.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                        <p><a href="./courses/linkedlist.html" class="text-reset">Liked List</a></p>
+                        <p><a href="./courses/stack.html" class="text-reset">Stacks</a></p>
+                        <p><a href="./courses/heaps.html" class="text-reset">Heapss</a></p>
+                        <p><a href="./courses/hash.html" class="text-reset">hash Tables</a></p>
+                        <p><a href="./courses/python.html" class="text-reset">Python</a></p>
+                        <p><a href="./courses/cintroduction.html" class="text-reset">C#</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Help Team</h6>
+                        <p><a href="./help.html" class="text-reset">Help</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i>Damascus, Almazzeh, SY</p>
+                        <p><i class="fas fa-envelope me-3"></i> sameraboualaenaen@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i>+963 946 452 948</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <div class="text-center p-4 copyright" style="background-color: rgba(232,255,248,255);">
+        © 2024 Copyright
+      </div>
+        </footer>
+
+    <script src="../main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

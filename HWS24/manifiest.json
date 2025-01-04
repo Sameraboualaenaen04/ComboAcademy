@@ -1,0 +1,59 @@
+{
+    "project": {
+      "name": "COMBO ACADEMY",
+      "version": "1.0.0",
+      "description": "Learning Data structures and fundemental of C# and python programming language.",
+      "author": "Samer abou alaenaen",
+      "license": "MIT",
+      "scripts": {
+        "start": "main.js",
+        "test": "jest"
+      },
+      "settings": {
+        "environment": "development",
+        "port": 3000
+      },
+      "files": [
+        "main.js",
+        "index.html",
+        "style.css",
+        "manifest.json"
+      ],
+      "colors":{
+        "background-color": "#fff"
+      },
+      "icon":{
+        "src": "download.png",
+        "sizes": "212x245",
+        "type": "image/png"
+      },
+      "id":"combo-academy-app",
+      "orientation":"portrait",
+      "scope":"/",
+      "screenshots":[{
+       "src": "screen-shot-1.png",
+        "sizes": "1920x1080",
+        "type": "image/png"
+      },
+      {
+        "src": "screen-shot-2.png",
+        "sizes": "1920x1080",
+        "type": "image/png"
+      }
+    ],
+    "shortname":"ComboAcademy",
+    "shortcuts": [
+      {
+        "name": "Home",
+        "url": "/",
+        "description": "Go to the home page"
+      },
+      {
+        "name": "Tutorials",
+        "url": "/tutorials",
+        "description": "Access programming tutorials"
+      }
+    ],
+    "start_url":"/index.html"
+    }
+}
